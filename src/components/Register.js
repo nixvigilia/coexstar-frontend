@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { MyContext } from "../contexts/MyContext";
 
 function Register() {
-  const { toggleNav, registerUser } = useContext(MyContext);
+  const { registerUser } = useContext(MyContext);
   const initialState = {
     userInfo: {
       name: "",

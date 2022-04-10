@@ -5,7 +5,7 @@ import { MyContext } from "../contexts/MyContext";
 import Register from "./Register";
 
 function Home() {
-  const { rootState, logoutUser } = useContext(MyContext);
+  const { rootState } = useContext(MyContext);
   const { isRegistered, newUserName, newUserEmail, message } = rootState;
 
   // If user completes registration
@@ -17,7 +17,6 @@ function Home() {
         <div className="_email">
           <span>{newUserEmail}</span>
         </div>
-        {/* <button onClick={logoutUser}>Logout</button> */}
       </div>
     );
   } else {
